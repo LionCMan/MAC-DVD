@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MACDVD2</string>
+
+    <string name="title">MAC DVD</string>
+    <string name="description">MAC DVD is a DVD sales and rental shop that also buys, sells, unlocks and repairs both mobile phones and computers as well as selling technical accessories and providing internet access, scanning, printing and faxing facilities.</string>
+
+    <string name="address">Address: Main Street, Moate, Co.Westmeath</string>
+    <string name="hours">Opening Hours: Open Everyday From: 12noon-10pm</string>
+
+    <string name="facebook">Facebook</string>
+    <string name="phone">Call Us</string>
+
+    <string name="image_content">Image of MAC DVD business face from outside of store</string>
+
+</resources>

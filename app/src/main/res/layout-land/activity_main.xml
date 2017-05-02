@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main"
+    android:background="@android:color/background_light" >
+
+    <ImageView android:id="@+id/business_image"
+        android:src="@drawable/mac2"
+        android:contentDescription="@string/image_content"
+        app:layout_heightPercent="70%"
+        app:layout_widthPercent="50%"
+        style="@style/imageView" />
+    <TextView android:id="@+id/business_title"
+        android:text="@string/title"
+        android:layout_toRightOf="@id/business_image"
+        android:layout_toEndOf="@id/business_image"
+        android:layout_alignParentTop="true"
+        app:layout_widthPercent="100%"
+        style="@style/title" />
+    <View android:id="@+id/line1"
+        android:layout_toRightOf="@id/business_image"
+        android:layout_toEndOf="@id/business_image"
+        app:layout_widthPercent="33%"
+        app:layout_heightPercent="1%"
+        style="@style/line1" />
+
+    <View android:id="@+id/buffer1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="2%"
+        style="@style/buffer" >
+    </View>
+    <View android:id="@+id/buffer2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="2%"
+        style="@style/buffer" >
+    </View>
+    <View android:id="@+id/buffer4"
+        app:layout_heightPercent="2%"
+        app:layout_widthPercent="100%"
+        style="@style/buffer4">
+    </View>
+
+    <Button android:id="@+id/business_facebook"
+        android:text="@string/facebook"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="47%"
+        style="@style/fButton" />
+
+    <TextView android:id="@+id/business_hours"
+        android:text="@string/hours"
+        android:layout_above="@id/business_facebook"
+        app:layout_widthPercent="100%"
+        style="@style/smallTextL" />
+    <TextView android:id="@+id/business_address"
+        android:text="@string/address"
+        android:layout_above="@id/business_hours"
+        android:layout_below="@+id/line2"
+        app:layout_widthPercent="100%"
+        style="@style/smallTextL" />
+
+    <View android:id="@+id/line2"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="1%"
+        android:layout_below="@id/business_image"
+        style="@style/line2" />
+
+    <TextView android:id="@+id/business_description"
+        android:text="@string/description"
+        app:layout_widthPercent="100%"
+        android:layout_above="@id/line2"
+        android:layout_below="@id/line1"
+        android:layout_toRightOf="@id/business_image"
+        android:layout_toEndOf="@id/business_image"
+        style="@style/description" />
+
+    <TextView android:id="@+id/buffer3"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/business_facebook"
+        android:layout_toEndOf="@id/business_facebook"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="2%" />
+    <Button android:id="@+id/business_call"
+        android:text="@string/phone"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="47%"
+        style="@style/cButton" />
+
+</android.support.percent.PercentRelativeLayout>
